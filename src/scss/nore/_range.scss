@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "breakpoints";
+
+/* Range */
+$smaller-than-xs: "only screen and (max-width: " + $xs + ")";
+$smaller-than-sm: "only screen and (max-width: " + $sm + ")";
+$smaller-than-md: "only screen and (max-width: " + $md + ")";
+$smaller-than-lg: "only screen and (max-width: " + $lg + ")";
+$smaller-than-xl: "only screen and (max-width: " + $xl + ")";
+
+$larger-than-xs: "only screen and (min-width: " + ($xs + 1px) + ")";
+$larger-than-sm: "only screen and (min-width: " + ($sm + 1px) + ")";
+$larger-than-md: "only screen and (min-width: " + ($md + 1px) + ")";
+$larger-than-lg: "only screen and (min-width: " + ($lg + 1px) + ")";
+$larger-than-xl: "only screen and (min-width: " + ($xl + 1px) + ")";
+
+$between-xs-and-sm: "only screen and (min-width:" + ($xs + 1px) + ") and (max-width: " + $sm + ")";
+$between-xs-and-md: "only screen and (min-width:" + ($xs + 1px) + ") and (max-width: " + $md + ")";
+$between-xs-and-lg: "only screen and (min-width:" + ($xs + 1px) + ") and (max-width: " + $lg + ")";
+$between-xs-and-xl: "only screen and (min-width:" + ($xs + 1px) + ") and (max-width: " + $xl + ")";
+
+$between-sm-and-md: "only screen and (min-width:" + ($sm + 1px) + ") and (max-width: " + $md + ")";
+$between-sm-and-lg: "only screen and (min-width:" + ($sm + 1px) + ") and (max-width: " + $lg + ")";
+$between-sm-and-xl: "only screen and (min-width:" + ($sm + 1px) + ") and (max-width: " + $xl + ")";
+
+$between-md-and-lg: "only screen and (min-width:" + ($md + 1px) + ") and (max-width: " + $lg + ")";
+$between-md-and-xl: "only screen and (min-width:" + ($md + 1px) + ") and (max-width: " + $xl + ")";
+
+$between-lg-and-xl: "only screen and (min-width:" + ($lg + 1px) + ") and (max-width: " + $xl + ")";
