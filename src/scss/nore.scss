@@ -130,7 +130,7 @@ $fractions: (
 }
 
 .g-0 {
-	display: none;
+	display: none !important;
 }
 
 @each $frac, $val in $fractions {
@@ -142,7 +142,7 @@ $fractions: (
 @each $range, $spec in $ranges {
 	@media #{$spec} {
 		.#{$range}-0 {
-			display: none;
+			display: none !important;
 		}
 		@each $frac, $val in $fractions {
 			.#{$range}-#{$frac} {
