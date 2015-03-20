@@ -27,3 +27,26 @@ $between-md-and-lg: "only screen and (min-width:" + ($md + 1px) + ") and (max-wi
 $between-md-and-xl: "only screen and (min-width:" + ($md + 1px) + ") and (max-width: " + $xl + ")";
 
 $between-lg-and-xl: "only screen and (min-width:" + ($lg + 1px) + ") and (max-width: " + $xl + ")";
+
+$ranges: (
+	lx: $larger-than-xl,
+	gl: $larger-than-lg,
+	dm: $larger-than-md,
+	ms: $larger-than-sm,
+	sx: $larger-than-xs,
+	xl: $smaller-than-xl,
+	lg: $smaller-than-lg,
+	md: $smaller-than-md,
+	sm: $smaller-than-sm,
+	xs: $smaller-than-xs,
+	glxl: $between-lg-and-xl,
+	dmxl: $between-md-and-xl,
+	dmlg: $between-md-and-lg,
+	msxl: $between-sm-and-xl,
+	mslg: $between-sm-and-lg,
+	msmd: $between-sm-and-md,
+	sxxl: $between-xs-and-xl,
+	sxlg: $between-xs-and-lg,
+	sxmd: $between-xs-and-md,
+	sxsm: $between-xs-and-sm,
+);
