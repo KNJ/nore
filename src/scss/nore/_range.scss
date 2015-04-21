@@ -2,11 +2,11 @@
 @import "breakpoints";
 
 /* Range */
-$smaller-than-xs: "only screen and (max-width: " + $xs + ")";
-$smaller-than-sm: "only screen and (max-width: " + $sm + ")";
-$smaller-than-md: "only screen and (max-width: " + $md + ")";
-$smaller-than-lg: "only screen and (max-width: " + $lg + ")";
-$smaller-than-xl: "only screen and (max-width: " + $xl + ")";
+$xs-or-smaller: "only screen and (max-width: " + $xs + ")";
+$sm-or-smaller: "only screen and (max-width: " + $sm + ")";
+$md-or-smaller: "only screen and (max-width: " + $md + ")";
+$lg-or-smaller: "only screen and (max-width: " + $lg + ")";
+$xl-or-smaller: "only screen and (max-width: " + $xl + ")";
 
 $larger-than-xs: "only screen and (min-width: " + ($xs + 1px) + ")";
 $larger-than-sm: "only screen and (min-width: " + ($sm + 1px) + ")";
@@ -34,11 +34,11 @@ $ranges: (
 	dm: $larger-than-md,
 	ms: $larger-than-sm,
 	sx: $larger-than-xs,
-	xl: $smaller-than-xl,
-	lg: $smaller-than-lg,
-	md: $smaller-than-md,
-	sm: $smaller-than-sm,
-	xs: $smaller-than-xs,
+	xl: $xl-or-smaller,
+	lg: $lg-or-smaller,
+	md: $md-or-smaller,
+	sm: $sm-or-smaller,
+	xs: $xs-or-smaller,
 	glxl: $between-lg-and-xl,
 	dmxl: $between-md-and-xl,
 	dmlg: $between-md-and-lg,
