@@ -2,7 +2,7 @@
 
 ## Overview
 
-Nore is simple CSS framework for responsive web design, adopting concepts of the fluid grid and media queries.
+Nore is simple CSS framework for responsive web design, adopting concepts of the fluid grid and media queries. You can also see [Japanese full documentation](http://wazly.net/app/nore).
 
 ## Getting Started
 
