@@ -61,3 +61,21 @@ Name the classes like those of [Pure](http://purecss.io/grids/), but do not forg
     </div>
 </div>
 ```
+
+## Media Queries
+
+If you want to put 3 columns horizontally on PCs or tablets and vertically on smaller devices, overwrite `.g-*` with `.sm-*` as follows.
+
+```html
+<div class="nore">
+    <div class="g-1-3 sm-1">
+        <p>Block 1</p>
+    </div>
+    <div class="g-1-3 sm-1">
+        <p>Block 2</p>
+    </div>
+    <div class="g-1-3 sm-1">
+        <p>Block 3</p>
+    </div>
+</div>
+```
