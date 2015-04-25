@@ -6,14 +6,14 @@ Nore is simple CSS framework for responsive web design, adopting concepts of the
 
 ## Getting Started
 
-If the path is `DocumentRoot/css/nore.css`, then copy and paste the HTML below. And customize it if needed.
+If the path is `DocumentRoot/css/nore.min.css`, then copy and paste the HTML below. And customize it if needed.
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="1" user-scalable="no">
-        <link rel="stylesheet" href="/css/nore.css">
+        <link rel="stylesheet" href="/css/nore.min.css">
     </head>
 </html>
 ```
