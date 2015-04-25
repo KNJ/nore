@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "breakpoints";
 
-/* Range */
+// Range
 $xs-or-smaller: "only screen and (max-width: " + $xs + ")";
 $sm-or-smaller: "only screen and (max-width: " + $sm + ")";
 $md-or-smaller: "only screen and (max-width: " + $md + ")";
