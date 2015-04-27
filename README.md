@@ -91,11 +91,11 @@ The variables of breakpoints can be reset as you like.
 |`md`  |`$md` or less            |<  721             |
 |`lg`  |`$lg` or less            |<  961             |
 |`xl`  |`$xl` or less            |< 1201             |
-|`sx`  |more than `$xs+1`        |>  320             |
-|`ms`  |more than `$sm+1`        |>  540             |
-|`dm`  |more than `$md+1`        |>  720             |
-|`gl`  |more than `$lg+1`        |>  960             |
-|`lx`  |more than `$xl+1`        |>  1200            |
+|`sx`  |more than `$xs`          |>  320             |
+|`ms`  |more than `$sm`          |>  540             |
+|`dm`  |more than `$md`          |>  720             |
+|`gl`  |more than `$lg`          |>  960             |
+|`lx`  |more than `$xl`          |>  1200            |
 |`sxsm`|between `$xs+1` and `$sm`|321 -  540         |
 |`sxmd`|between `$xs+1` and `$md`|321 -  720         |
 |`sxlg`|between `$xs+1` and `$lg`|321 -  960         |
