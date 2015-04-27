@@ -100,8 +100,8 @@ The variables of breakpoints can be reset as you like.
 |`sxmd`|between `$xs+1` and `$md`|321 -  720         |
 |`sxlg`|between `$xs+1` and `$lg`|321 -  960         |
 |`sxxl`|between `$xs+1` and `$xl`|321 - 1200         |
-|`msmd`|between `$sm+1` and `$md`|541 -  540         |
-|`mslg`|between `$sm+1` and `$lg`|541 -  720         |
+|`msmd`|between `$sm+1` and `$md`|541 -  720         |
+|`mslg`|between `$sm+1` and `$lg`|541 -  960         |
 |`msxl`|between `$sm+1` and `$xl`|541 - 1200         |
 |`dmlg`|between `$dm+1` and `$lg`|721 -  960         |
 |`dmxl`|between `$md+1` and `$xl`|721 - 1200         |
