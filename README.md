@@ -106,3 +106,25 @@ The variables of breakpoints can be reset as you like.
 |`dmlg`|between `$dm+1` and `$lg`|721 -  960         |
 |`dmxl`|between `$md+1` and `$xl`|721 - 1200         |
 |`glxl`|between `$lg+1` and `$xl`|961 - 1200         |
+
+## Nore Outermost
+
+The width of nore columns is dynamic because of relative value. To avoid expanding to infinity, `.nore-outermost` is available. It sets limitation to the width of outermost nore block.
+
+*Case:* `$nore-outermost: 920px`
+
+```html
+<div class="nore nore-outermost">
+    <div class="g-1-5">
+        <p>This column never expand more than 184px.</p>
+    </div>
+    <div class="g-4-5 nore">
+        <div class="g-1-4">
+            <p>This column never expand more than 184px.</p>
+        </div>
+        <div class="g-3-4">
+            <p>This column never expand more than 552px.</p>
+        </div>
+    </div>
+</div>
+```
