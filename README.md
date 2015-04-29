@@ -128,3 +128,7 @@ The width of nore columns is dynamic because of relative value. To avoid expandi
     </div>
 </div>
 ```
+
+## Variables
+
+`src/scss/nore/_breakpoints.scss` and `src/scss/nore/_variables.scss` contain variables you can change freely. They are compiled with [Compass](http://compass-style.org/).
