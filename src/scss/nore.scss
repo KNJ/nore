@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+@import "compass/css3/flexbox";
 @import "nore/doc";
 @import "nore/variables";
 @import "nore/range";
@@ -87,6 +89,9 @@ $fractions: (
 	"15-16": (100% * 15 / 16),
 );
 
+// Directions
+$directions: row, row-reverse, column, column-reverse;
+
 .#{$name}-outermost {
 	margin: 0 auto;
 	padding-left: $outermost-padding-left;
@@ -116,10 +121,23 @@ $fractions: (
 	}
 }
 
+@each $direction in $directions {
+	.g-#{$direction} {
+		@include display-flex;
+		@include flex-direction($direction);
+	}
+}
+
 @each $range, $spec in $ranges {
 	@media #{$spec} {
 		.#{$range}-0 {
 			display: none !important;
+		}
+		@each $direction in $directions {
+			.#{$range}-#{$direction} {
+				@include display-flex;
+				@include flex-direction($direction);
+			}
 		}
 		@each $frac, $val in $fractions {
 			.#{$range}-#{$frac} {
