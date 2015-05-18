@@ -129,6 +129,25 @@ The width of nore columns is dynamic because of relative value. To avoid expandi
 </div>
 ```
 
+## Flexbox Layout
+
+If you are not to support legacy browsers, CSS3 Flexbox properties are available. `.*-row` arranges its children in a row and `.*-column` in a column.
+
+Try the following code.
+
+```html
+<ul class="g-row">
+    <li>item in a row</li>
+    <li>item in a row</li>
+    <li>item in a row</li>
+</ul>
+<ul class="g-column">
+    <li>item in a column</li>
+    <li>item in a column</li>
+    <li>item in a column</li>
+</ul>
+```
+
 ## Variables
 
 `src/scss/nore/_breakpoints.scss` and `src/scss/nore/_variables.scss` contain variables you can change freely. They are compiled with [Compass](http://compass-style.org/).
