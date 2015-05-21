@@ -133,7 +133,7 @@ The width of nore columns is dynamic because of relative value. To avoid expandi
 
 If you are not to support legacy browsers, CSS3 Flexbox properties are available. `.*-row` arranges its children in a row and `.*-column` in a column.
 
-Try the following code.
+Try the following code:
 
 ```html
 <ul class="g-row">
@@ -154,4 +154,54 @@ Try the following code.
 
 ```console
 $ compass compile -e production
+```
+
+## Gutters
+
+The gutter mixin generates padding properties to the specific scope.
+
+*Example:*
+
+```scss
+@import "nore/gutter";
+@include gutter(gl, 12);
+```
+
+This will generate the following.
+
+```css
+@media only screen and (min-width: 980px){
+    .gutter-gl-right-12 {
+        padding-right: 12px;
+    }
+    .gutter-gl-both-12 {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .gutter-gl-left-12 {
+        padding-left: 12px;
+    }
+}
+```
+
+And you will use these properties as follows.
+
+```html
+<div class="nore nore-outermost">
+    <div class="g-1-3 lg-1">
+        <div class="gutter-gl-right-12">
+            <p>A right gutter is present.</p>
+        </div>
+    </div>
+    <div class="g-1-3 lg-1">
+        <div class="gutter-gl-both-12">
+            <p>A right gutter and a left gutter are present.</p>
+        </div>
+    </div>
+    <div class="g-1-3 lg-1">
+        <div class="gutter-gl-left-12">
+            <p>A left gutter is present.</p>
+        </div>
+    </div>
+</div>
 ```
