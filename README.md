@@ -150,10 +150,10 @@ Try the following code:
 
 ## Variables
 
-`src/scss/nore/_breakpoints.scss` and `src/scss/nore/_variables.scss` contain variables you can change freely. They are compiled with [Compass](http://compass-style.org/) as below.
+`src/scss/nore/_breakpoints.scss` and `src/scss/nore/_variables.scss` contain variables you can change freely. They are compiled with [Compass](http://compass-style.org/) as below:
 
 ```console
-$ compass compile -e production
+$ compass compile --force -e production
 ```
 
 ## Gutters
