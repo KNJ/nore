@@ -62,6 +62,19 @@ Name the classes like those of [Pure](http://purecss.io/grids/), but do not forg
 </div>
 ```
 
+Paddings and borders ruin the grids? Try to use `.nored` instead:
+
+```html
+<div class="nored">
+    <div class="g-1-2" style="padding:8px">
+        <p>50% (including padding)</p>
+    </div>
+    <div class="g-1-2" style="border:4px solid #000">
+        <p>50% (including border)</p>
+    </div>
+</div>
+```
+
 ## Media Queries
 
 If you want to put 3 columns horizontally on PCs or tablets and vertically on smaller devices, overwrite `.g-*` with `.sm-*` as follows.
@@ -131,7 +144,7 @@ The width of nore columns is dynamic because of relative value. To avoid expandi
 
 ## Flexbox Layout
 
-If you are not to support legacy browsers, CSS3 Flexbox properties are available. `.*-row` arranges its children in a row and `.*-column` in a column.
+If you are not to support legacy browsers, CSS3 Flexbox properties are available. `.{$scope}-row` arranges its children in a row and `.{$scope}-column` in a column.
 
 Try the following code:
 
@@ -167,7 +180,7 @@ The gutter mixin generates padding properties to the specific scope.
 @include gutter(gl, 12);
 ```
 
-This will generate the following.
+This will generate the following:
 
 ```css
 @media only screen and (min-width: 980px){
@@ -184,7 +197,7 @@ This will generate the following.
 }
 ```
 
-And you will use these properties as follows.
+And you will use these properties as follows:
 
 ```html
 <div class="nore nore-outermost">
