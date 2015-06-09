@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "compass/css3/flexbox";
+@import "compass/css3/box-sizing";
 @import "nore/doc";
 @import "nore/variables";
 @import "nore/range";
@@ -92,14 +93,7 @@ $fractions: (
 // Directions
 $directions: row, row-reverse, column, column-reverse;
 
-.#{$name}-outermost {
-	margin: 0 auto;
-	padding-left: $outermost-padding-left;
-	padding-right: $outermost-padding-right;
-	max-width: $outermost-width;
-}
-
-.#{$name} {
+%nore {
 	letter-spacing: -0.4em;
 	> * {
 		display: inline-block;
@@ -108,6 +102,24 @@ $directions: row, row-reverse, column, column-reverse;
 	}
 	> .#{$name} {
 		letter-spacing: -0.4em;
+	}
+}
+
+.#{$name}-outermost {
+	margin: 0 auto;
+	padding-left: $outermost-padding-left;
+	padding-right: $outermost-padding-right;
+	max-width: $outermost-width;
+}
+
+.#{$name} {
+	@extend %nore;
+}
+
+.#{$named} {
+	@extend %nore;
+	> * {
+		@include box-sizing(border-box);
 	}
 }
 
