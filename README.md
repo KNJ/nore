@@ -12,7 +12,7 @@ If the path is `DocumentRoot/css/nore.min.css`, then copy and paste the HTML bel
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="1" user-scalable="no">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="/css/nore.min.css">
     </head>
 </html>
